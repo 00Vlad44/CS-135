@@ -28,4 +28,3 @@
 
 ;;Tests:
 (lbf-ft->Nm 50)
-
