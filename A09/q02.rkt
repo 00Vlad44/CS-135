@@ -109,4 +109,4 @@
 (check-expect
 (remove-duplicates (list 0 0 0 0 1 9 9 2 1 2 9 0 1 2 1 1 2 2)) (list 0 1 9 2))
 (check-expect
-(remove-duplicates (list 10 1 9 9 2 1 2 9 1 2 1 1 2 2)) (list 10 1 9 2))
+(remove-duplicates (list 10 1 9 9 2 1 2 9 1 2 1 1 2 2)) (list 10 1 9 2)) 

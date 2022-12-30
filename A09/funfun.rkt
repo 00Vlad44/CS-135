@@ -11,7 +11,7 @@
 ;;PURPOSE;;
 ;; (multi-apply list v) produces a number base off
 ;; a list of function with a given starting value
-;; of v by adding the elemtents in the same order
+;; of v by adding the elemtents in the same order 
 ;; as foldr
 
 ;; Examples:

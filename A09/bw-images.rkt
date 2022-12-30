@@ -160,6 +160,7 @@
  (list 1 0 0 0)
  (list 1 0 0 0)
  (list 1 0 0 0)))
+
 (check-expect (transpose cross)
 (list
  (list 1 1 1 1)
@@ -186,4 +187,4 @@
 (check-expect (transpose image-L-reflect-x) image-L-reflect-x)
 (check-expect (transpose '()) '())
 (check-expect (transpose '((1 0 0 1 1)))
-'((1) (0) (0) (1) (1)))
+'((1) (0) (0) (1) (1))) 
