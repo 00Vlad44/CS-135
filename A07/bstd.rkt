@@ -103,5 +103,3 @@ empty
      (range-query (node-left bstd) low high)]
     [(< (node-key bstd) low)
      (range-query (node-right bstd) low high)]))
-
-

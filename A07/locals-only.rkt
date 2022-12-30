@@ -36,4 +36,3 @@
       [(empty? (rest lon)) lon]
       [(= min-list max-list) lon]
       [else (norm-list lon)])))
-          

@@ -164,6 +164,3 @@ Run and No Face No Case)")
     [(string? (first lobt)) (rewind/acc (rest lobt) (cons (first lobt) acc))]
     [(cnode? (first lobt)) (append (rewind/acc (rest lobt) empty)
                                    (rewind/acc (cnode-children (first lobt)) acc))]))
-
-
-

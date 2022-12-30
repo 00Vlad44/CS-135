@@ -113,7 +113,6 @@
                     [(empty? mother-path) father-path]
                     [else mother-path]))]))
                   
-
 ;; get-f-descendants-path: AT Str -> (listof Str)
 (define (get-f-descendants-path at name)
   (get-f-descendants-path/acc at name empty))
