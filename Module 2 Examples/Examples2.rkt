@@ -39,5 +39,3 @@
 ;; Example 11
 (define (g-cord x y)
   (+ (* x (sqrt x)) (sqr y)))
-
-
