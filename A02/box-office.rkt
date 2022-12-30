@@ -46,7 +46,6 @@
       (actor-points num-of-actors)(explosions-points num-of-explosions)))
     
     
-
 ;; Tests:
 (check-expect (box-office-profits "Thor: Love and Thunder" "Marvel" 4 50 ) 980)
 (check-expect (box-office-profits "The End Edssawe the" "Jas ndustry" 3 100 ) 680)

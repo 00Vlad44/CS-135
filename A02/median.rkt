@@ -16,7 +16,6 @@
 (check-expect (median-of-3-simple 3 4 5) 4)
 (check-expect (median-of-3-simple 8 0 109) 8)
 
-
 ;; median-of-3-simple: Num Num Num -> Num
 (define (median-of-3-simple a b c)
   (cond
