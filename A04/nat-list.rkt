@@ -16,7 +16,6 @@
 )
 
 
-
 (define (list->nat-helper lst acc tail)
     (cond
     [(empty? lst) acc]

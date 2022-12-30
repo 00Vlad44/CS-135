@@ -8,12 +8,10 @@
 ;; ***************************************************
 ;;
 
-
 ;; A (pair-listof X) is one of:
 ;; * empty
 ;; * (cons X empty)
 ;; * (cons X (cons X (pair-listof X)))
-
 
 ;; pair-listof-X-template: List -> Num-Subsquent
 (define (pair-listof-X-template  X)
@@ -22,7 +20,6 @@
     [(cons? X)...]
     [(...(cons? (first X))(...(second X)
                   (pair-listof-X-template (rest X)))) ...]))
-
 
 ;;PURPOSE;;
 ;; (sarcastic string) cases the string
@@ -46,7 +43,6 @@
 ;; sarcastic: string -> string-sarcastic
 (define (sarcastic string)
     (sarcastic-helper (string->list string) 0 ""))
-
 
 ;; Test Cases:
 (check-expect (sarcastic "GOOD LUCK... you'll need it!") "GoOd lUcK... yOu'lL NeEd iT!")

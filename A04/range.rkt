@@ -80,8 +80,3 @@
 (check-expect (spread (list 1 -3 10 12)) 15)
 (check-expect (spread (list 1 -3 10 -12)) 22)
 (check-expect (spread (list 10 10)) 0)
-
-
-
-
-
