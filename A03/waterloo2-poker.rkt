@@ -243,7 +243,3 @@
 (check-expect(valid-hand? (cons
           (cons 2.870 (cons 'S empty))
            (cons (cons 6 (cons 'S empty)) empty) )) false)
-
-
-
-
