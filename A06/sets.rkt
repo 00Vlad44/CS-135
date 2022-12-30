@@ -59,4 +59,4 @@
 ;; Test Cases:
 (check-expect (intersection (list 1 2) (list 5 6 7 8 9)) (list))
 (check-expect (intersection (list 1 2 3) (list 3 3 4 5 6 7 8 9)) (list 3))
-(check-expect (intersection (list 1 13) (list 1 12 13)) (list 1 13))
+(check-expect (intersection (list 1 13) (list 1 12 13)) (list 1 13)) 

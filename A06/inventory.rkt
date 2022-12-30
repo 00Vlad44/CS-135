@@ -214,7 +214,6 @@
     [(> (ev-mileage lst1) (ev-mileage lst2)) false]
     [else true]))
 
-
 ;; sort-evs: list -> list
 (define (sort-evs lst)
     (sel-sort lst))

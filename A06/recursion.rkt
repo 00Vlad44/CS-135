@@ -165,5 +165,3 @@
 (check-expect (find-smallest (list 3 -5 4 1 2)) -5)
 (check-expect (find-smallest (list 10 2 2 5 20 3934)) 2)
 (check-expect (find-smallest (list -1 0 324 -2321 -3 0)) -2321)
-
-
