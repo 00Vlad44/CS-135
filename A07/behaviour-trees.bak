@@ -1,8 +1,9 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
-#reader(lib "htdp-advanced-reader.ss" "lang")((modname behaviour-trees) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #t #t none #f () #f)))
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname behaviour-trees) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #t)))
 ;;
 ;; ***************************************************
+;; Vlad Comsa (21027115)
 ;; CS 135 Fall 2022
 ;; Assignment 07, Problem 3
 ;; ***************************************************
@@ -114,34 +115,6 @@ Run and No Face No Case)")
                    "Walk Left"
                    "Walk Right")))
 
-;; add-action: CNode Nat Str Nat -> CNode
-(define (add-action a-cnode id action n)
-  (local [(define (index loa action n)
-            (cond
-              [(empty? loa) empty]
-              [(= 1 n) (cons action loa)]   
-              [else (cons (first loa)
-                          (index (rest loa) action (sub1 n)))]))
-          (define (add-act-bt bt id)
-            (cond
-              [(string? bt) bt]
-              [(= id (cnode-id bt))
-               (make-cnode (cnode-type bt) id
-                           (index (cnode-children bt) action n))]
-              [else (make-cnode (cnode-type bt)
-                                (cnode-id bt)
-                                (add-act-bt (cnode-children bt) id))]))
-
-          (define (add-act-lbt lbt id)
-            (cond
-              [(empty? lbt) empty]
-              [else (cons (add-act-bt (first lbt) id)
-                          (add-act-lbt (rest lbt) id))]))]
-    (add-act-bt a-cnode id)))
-              
-
-
-
 ;;Examples d
 (check-expect (rewind npc1-through-window)
               (list "Close Window" "Turn Around"
@@ -163,7 +136,7 @@ Run and No Face No Case)")
     [(empty? lobt) acc]
     [(string? (first lobt)) (rewind/acc (rest lobt) (cons (first lobt) acc))]
     [(cnode? (first lobt)) (append (rewind/acc (rest lobt) empty)
-                                   (rewind/acc (cnode-children (first lobt)) acc))]))
+                                   (rewind/acc (cnode-children (frist lobt)) acc))]))
 
 
 

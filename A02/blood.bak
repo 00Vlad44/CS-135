@@ -2,6 +2,7 @@
 ;; about the language level of this file in a form that our tools can easily process.
 #reader(lib "htdp-beginner-reader.ss" "lang")((modname blood) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #t)))
 ;; ***************************************************
+;; Vlad Comsa (21027115)
 ;; CS 135 Fall 2020
 ;; Assignment 02, Problem 4
 ;; ***************************************************

@@ -3,6 +3,7 @@
 #reader(lib "htdp-advanced-reader.ss" "lang")((modname bstd) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #t #t none #f () #f)))
 ;;
 ;; ***************************************************
+;; Vlad Comsa (21027115)
 ;; CS 135 Fall 2022
 ;; Assignment 07, Problem 2
 ;; ***************************************************

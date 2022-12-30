@@ -29,34 +29,28 @@
      (+ (count-leaves (first t)) (count-leaves (rest t)))]))
 
 
-;; returns a list of nums that are perfect squares
+
 (define (times-square lon)
   (foldr * 1 (filter (lambda (x) (integer? (sqrt x))) lon)))
 
-;; keeps nums that are a multiple of 3 in the NumList
 (define (keep-multiples3 lon)
   (filter (lambda (x) (integer? (/ x 3))) lon))
 
-;; keeps nums that are a multiples of 2 and 3 in the NumList
 (define (keep-multiples23s lon)
   (filter (lambda (x) (or (integer? (/ x 3))
                           (integer? (/ x 2)))) lon))
 
-;; returns all numbers in a list that are within 10-30 inclusive
 (define (10-30 lon)
   (filter (lambda (x) (and (>= x 10) (<= x 30))) lon))
 
-;; returns strings in a list that are less than or equal to 6 characters long
 (define (short-string los)
   (filter (lambda (x) (<= (string-length x) 6)) los))
 
-;; returns a list of odd numbers from NumList
+
 (define (odds lst)
   (local [(define (f x) (odd? x))]
   (filter f lst)))
 
-;; checks whether there are more even or odd numbers
-;; in the list and adds the numbers in the list that has a higher count
 (define (sum-odd-or-sum-even lst)
   (local [(define (odd x) (odd? x))]
     (local [(define (even x) (even? x))]
@@ -65,9 +59,7 @@
          (foldr + 0 (filter odd lst))]
         [else (foldr + 0 (filter even lst))]))))
 
-;; filters a list using map and checks each value in the
-;; list of numbers is divisble by n and returns
-;; a list of numbers divislbe by n
+
 (define (make-divisible? n lst)
   (map (lambda (x) (integer? (/ x n))) lst))
 

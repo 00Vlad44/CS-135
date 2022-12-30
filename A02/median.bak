@@ -3,6 +3,7 @@
 #reader(lib "htdp-beginner-reader.ss" "lang")((modname median) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #t)))
 ;;
 ;; ***************************************************
+;; Vlad Comsa (21027115)
 ;; CS 135 Fall 2020
 ;; Assignment 02, Problem 2
 ;; ***************************************************
