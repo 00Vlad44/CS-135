@@ -205,4 +205,3 @@
 (list "the" (list "a.txt" "b.txt" "c.txt")))) (list))
 
 (check-expect (search 'exclude "chases" "the" (list)) (list))
-

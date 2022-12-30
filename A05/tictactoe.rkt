@@ -173,7 +173,6 @@
               (= (+ 1 (count-sym (get-column T3Grid column) player)) (length T3Grid)))) true]
         [else false]))
 
-
 ;; Test Cases:
 (check-expect (will-win? (list (list '_ '_ '_)
 (list '_ 'X 'O)
