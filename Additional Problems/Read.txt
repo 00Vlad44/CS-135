@@ -1,0 +1,3 @@
+Came up with my own practice questions and coded them in Racket. 
+Some of the questions I commented, but the others I felt were a little too straight forward so I left out comments on them.
+Most of the code in the practice.rkt file came from examples in the study modules.
