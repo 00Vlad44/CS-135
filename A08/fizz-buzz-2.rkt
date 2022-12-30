@@ -69,5 +69,3 @@
 (check-expect
  (fizz-buzz-2 1 3 (list (list "easy" zero?)))
  '(1 2 3))
-
- 

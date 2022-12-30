@@ -156,5 +156,3 @@
 (check-expect (nested-cleanup '(1 () 2 () () 3)) '(1 2 3))
 (check-expect (nested-cleanup '(())) false)
 (check-expect (nested-cleanup '(()(() () 3 ()))) '((3)))
-
-
