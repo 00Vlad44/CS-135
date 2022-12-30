@@ -44,5 +44,3 @@
     (+ (log (/ spot-price strike-price))
        (*(+ rate(/(sqr volatility ) 2)) maturity))))
 (d1 1 2 3 4 5)
-
-            
